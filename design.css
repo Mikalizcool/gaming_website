@@ -8,6 +8,9 @@ a{
     text-decoration-style: initial;
     text-decoration-color: initial;
 }
+h1{
+	font-family: montserrat;
+}
 .tab{
 	font-family: montserrat;
 	font-size: 17px;
