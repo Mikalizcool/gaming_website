@@ -1,26 +1,27 @@
 p{
-	color: green;
+	color: orange;
 }
 
 a{
+	display: flex;
 	text-decoration: none;
 	text-decoration-line: none;
     text-decoration-style: initial;
     text-decoration-color: initial;
 	margin-right: 50px;
+	align-items: center;
 }
 h1{
 	font-family: montserrat;
-	background-color: orange;
-	border: 40px solid orange;
+	
 }
 .tab{
-	position: relative;
-	left: 100px;
-	bottom: 75px;
-	left: 600px;
+	display: flex;
 	font-family: montserrat;
 	font-size: 17px;
-	line-height: 1.5px;
 	font-weight: 600;
+
+}
+.flex-container{
+	display: flex;
 }
