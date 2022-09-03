@@ -1,7 +1,9 @@
 p{
 	color: white;
 }
-
+*{
+	font-family: montserrat;
+}
 a{
 	display: flex;
 	text-decoration: none;
@@ -12,7 +14,6 @@ a{
 	align-items: center;
 }
 h1{
-	font-family: montserrat;
 	color: white;
 	
 }
