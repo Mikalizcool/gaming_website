@@ -1,5 +1,5 @@
 p{
-	color: orange;
+	color: white;
 }
 
 a{
@@ -13,6 +13,7 @@ a{
 }
 h1{
 	font-family: montserrat;
+	color: white;
 	
 }
 .tab{
@@ -24,4 +25,12 @@ h1{
 }
 .flex-container{
 	display: flex;
+}
+.rectangle-container{
+	display: flex;
+	background-color: #283962;
+}
+.rectangle-container1{
+	display: flex;
+	background-color: #314aa9;
 }
