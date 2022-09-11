@@ -5,27 +5,56 @@
 		<link href="./favicon2.png" rel="icon">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 		<link href='./design.css' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<div class="rectangle-container">
-			<div style="display:flex;width:60%; justify-conter: center;"> <h1> ICCENTRIC GAMES </h1> </div>
-			<div class="tab" style="width:40%;">
-				<a href= "https://www.mikalizcool.com/" target="_blank"> <p> PORTFOLIO </p> </a>
-				<a href= "https://github.com/Mikalizcool" target="_blank"> <p> GITHUB </p </a>
-				<a href= "./michael_damico_resume.pdf" target="_blank"> <p> RESUME </p> </a>
+	<nav class="nav">
+		<button type="button" class="nav-close" onclick="toggleNav()">
+		  
+		</button>
+		<div style="display:flex">
+			<div style="display:flex, width:40%; margin-right:50px;"> <h1 style="color: black"> Iccentric Games </h1> </div>
+			<div class="nav-links-container" style="display:flex; width: 60%">
+			
+			  <a href="#" class="nav__link">
+				<span class="nav__text">Products</span>
+			  </a>
+			  <a href="#" class="nav__link">
+				<span class="nav__text">Locations</span>
+			  </a>
+			  <a href="#" class="nav__link">
+				<span class="nav__text">Settings</span>
+			  </a>
+			  <a href="#" class="nav__link">
+				<span class="nav__text">Contact Us</span>
+			  </a>
 			</div>
 		</div>
+	</nav>
+  <main class="main">
+	<div class="flex-container-g">
+		<div class="flex-container-5"> <button id="navButton" onclick="toggleNav()"> <p class="button-text"> <b> ___ <br> ___ <br> ___ </b> </p> </button> </div>
+		<div class="flex-container-4"> <h1> Iccentric Games </h1> </div>
+	</div>
+	<div class="flex-container-center" style="background-color: #314aa9">
+		<div class="flex-container-video">
+			<video controls class="gameVid">
+				<source src="game_clip.mp4" type="video/mp4">
+				<source src="game_clip.ogg" type="video/ogg">
+				Your browser does not support HTML video.
+			</video>
+		</div>
+		<div class="rectangle-container1">
+			<p class="message"> In Progress: A Beat Em Up Game! </p>
+		</div>
+	</div>
+  </main>
+  <script>
+    function toggleNav() {
+      document.body.classList.toggle("nav-open");
+    }
+  </script>
 		
-		<div class="flex-container" style="background-color: #314aa9">
-			<div style="display:flex; width:50%;">
-				<video width="600" controls class="artCenter">
-					<source src="game_clip.mp4" type="video/mp4">
-					<source src="game_clip.ogg" type="video/ogg">
-					Your browser does not support HTML video.
-				</video>
-			</div>
-			<div class="rectangle-container1"; style="display:flex; width:50%; ">
-				<p style="font-size: 20px;display:flex;align-items:center;"> In Progress: A Beat Em Up Game! </p>
-			</div>
+		
 	</body>
 </html>
