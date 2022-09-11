@@ -25,7 +25,7 @@ p{
 	}
 
 	.nav-open .main {
-	  transform: translateX(350px);
+	  transform: translateX(300px);
 	}
 
 	.nav {
