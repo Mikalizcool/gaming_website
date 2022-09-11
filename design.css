@@ -56,6 +56,8 @@ p{
 	}
 
 	.nav-links-container {
+		display: flex;
+		flex-direction: column;
 	  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
 	}
 
@@ -140,8 +142,14 @@ p{
 		align-items: center;
 	}
 	
-	.message{
+	.desktop-logo{
+		display:none;
+		width:0%;
 		
+	}
+	.nav-box{
+		display:flex;
+		justify-content: center;
 	}
 }
 
@@ -184,6 +192,11 @@ p{
 		justify-content: center;
 		align-items: center;
 	}
+	.desktop-logo{
+		display:flex;
+		width:40%;
+		margin-right:50px;
+	}
 	.nav-links-container{
 		display: flex;
 		flex-direction: row;
@@ -209,5 +222,4 @@ p{
 	.flex-container-center{
 		display: flex;
 	}
-	
 }
