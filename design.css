@@ -4,34 +4,210 @@ p{
 *{
 	font-family: montserrat;
 }
-a{
-	display: flex;
-	text-decoration: none;
-	text-decoration-line: none;
-    text-decoration-style: initial;
-    text-decoration-color: initial;
-	margin-right: 50px;
-	align-items: center;
-}
-h1{
-	color: white;
-	
-}
-.tab{
-	display: flex;
-	font-family: montserrat;
-	font-size: 17px;
-	font-weight: 600;
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
+
+
+
+@media screen and (max-width: 768px) {
+		/* for mobile */
+	body {
+	  margin: 0;
+	  overflow-x: hidden;
+	}
+	
+	h1{
+		
+	}
+	
+	.nav-open .nav {
+	  transform: translateX(0);
+	}
+
+	.nav-open .main {
+	  transform: translateX(350px);
+	}
+
+	.nav {
+	  width: 350px;
+	  height: 100vh;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  background: #333333;
+	  transform: translateX(-350px);
+	  transition: transform 0.2s;
+	  overflow: hidden;
+	}
+
+	.nav-close {
+	  background: none;
+	  display: flex;
+	  align-items: center;
+	  border: none;
+	  padding: 15px 25px;
+	  color: #dddddd;
+	  margin-left: auto;
+	  cursor: pointer;
+	}
+
+	.nav-close:hover {
+	  background: rgba(255, 255, 255, 0.05);
+	}
+
+	.nav-links-container {
+	  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15);
+	}
+
+	.nav__link {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  padding: 15px 25px;
+	  text-decoration: none;
+	  color: #dddddd;
+	}
+
+	.nav__text {
+	  font-size: 22px;
+	  font-family: "Assistant", sans-serif;
+	  font-weight: 500;
+	}
+
+	.nav__link:hover {
+	  background: rgba(255, 255, 255, 0.05);
+	}
+
+	.main {
+	  transition: transform 0.2s;
+	}
+	
+	.gameVid{
+		width: 80%;
+	}
+	
+	.flex-container-center{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+	.flex-container{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.flex-container-g{
+		display: flex;
+	}
+	
+	.flex-container-4{
+		display: flex;
+		justify-content: center;
+		width: 80%;
+		font-size: 10px;
+	}
+	
+	.flex-container-5{
+		display: flex;
+		width: 10%;
+	}
+	
+	.flex-container-video{
+		display: flex;
+		justify-content: center;
+		
+	}
+	
+	.rectangle-container1{
+		display: flex;
+		background-color: #314aa9;
+		justify-content: center;
+	}
+	
+	.button-text{
+		line-height: 10px;
+		color: grey;
+		
+	}
+	
+	#navButton{
+		display: flex;
+		background-color: #383838;
+		width: 200px;
+		height: 50px;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.message{
+		
+	}
 }
-.flex-container{
-	display: flex;
-}
-.rectangle-container{
-	display: flex;
-	background-color: #283962;
-}
-.rectangle-container1{
-	display: flex;
-	background-color: #314aa9;
+
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+
+	a{
+		display: flex;
+		text-decoration: none;
+		text-decoration-line: none;
+		text-decoration-style: initial;
+		text-decoration-color: initial;
+		margin-right: 50px;
+		align-items: center;
+	}
+	h1{
+		color: white;
+		
+	}
+	.tab{
+		display: flex;
+		font-family: montserrat;
+		font-size: 17px;
+		font-weight: 600;
+
+	}
+	.flex-container{
+		display: flex;
+	}.flex-container{
+		display: flex;
+	}
+	.rectangle-container{
+		display: flex;
+		background-color: #283962;
+	}
+	.rectangle-container1{
+		display: flex;
+		background-color: #314aa9;
+		width: 50%;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-links-container{
+		display: flex;
+		flex-direction: row;
+	}
+	.flex-container-5{
+		visibility: hidden;
+	}
+	.nav-close{
+		visibility: hidden;
+	}
+	
+	.flex-container-g{
+		display: none;
+	}
+	.flex-container-video{
+		display: flex;
+		width: 50%;
+		
+	}
+	.gameVid{
+		width: 100%;
+	}
+	.flex-container-center{
+		display: flex;
+	}
+	
 }
