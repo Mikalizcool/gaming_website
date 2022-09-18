@@ -66,10 +66,7 @@ p{
 	  color: #dddddd;
 	}
 
-	.nav__text {
-	  font-size: 22px;
-	  font-weight: 500;
-	}
+	
 
 	.nav__link:hover {
 	  background: rgba(255, 255, 255, 0.05);
@@ -91,22 +88,20 @@ p{
 	
 	.flex-container{
 		display: flex;
-		justify-content: center;
-		flex-direction: column;
 	}
 	
 	.flex-container-g{
 		display: flex;
 	}
 	
-	.flex-container-4{
+	.flex-container-title{
 		display: flex;
 		justify-content: center;
 		width: 80%;
 		font-size: 10px;
 	}
 	
-	.flex-container-5{
+	.flex-container-nav{
 		display: flex;
 		width: 10%;
 	}
@@ -117,7 +112,7 @@ p{
 		margin-top: 50px;
 	}
 	
-	.rectangle-container1{
+	.rectangle-container{
 		display: flex;
 		background-color: #314aa9;
 		justify-content: center;
@@ -148,6 +143,28 @@ p{
 		display:flex;
 		justify-content: center;
 	}
+	.container{
+		  display: inline-block;
+		  cursor: pointer;
+	}
+
+	.bar1, .bar2, .bar3{
+	  width: 35px;
+	  height: 5px;
+	  background-color: #333;
+	  margin: 6px 0;
+	  transition: 0.4s;
+	}
+
+	.change .bar1{
+	  transform: translate(0, 11px) rotate(-45deg);
+	}
+
+	.change .bar2{opacity: 0;}
+
+	.change .bar3{
+	  transform: translate(0, -11px) rotate(45deg);
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -175,14 +192,9 @@ p{
 	}
 	.flex-container{
 		display: flex;
-	}.flex-container{
-		display: flex;
 	}
+	
 	.rectangle-container{
-		display: flex;
-		background-color: #283962;
-	}
-	.rectangle-container1{
 		display: flex;
 		background-color: #314aa9;
 		width: 50%;
@@ -199,7 +211,7 @@ p{
 		flex-direction: row;
 		justify-content: flex-end;
 	}
-	.flex-container-5{
+	.flex-container-nav{
 		visibility: hidden;
 	}
 	.nav-close{
